@@ -1,0 +1,120 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #F5E5D5; /* Cream fur color */
+    color: #A0522D; /* Brown fur accent */
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    padding-top: 60px; /* Space below the fixed header */
+}
+
+header {
+    position: fixed; /* Keeps it stuck to the top */
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #D2B48C; /* Wooden floor tone */
+    padding: 10px 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    z-index: 1000; /* Ensures it's on top of other elements */
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* Space between links */
+}
+
+.cat-link {
+    display: inline-block;
+    padding: 8px 15px;
+    background-color: #87CEEB; /* Blue highlight */
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: transform 0.3s ease; /* For hover animation */
+}
+
+.cat-link:hover {
+    transform: scale(1.1); /* "Pounce" effect */
+}
+
+.cat-link i {
+    margin-right: 5px; /* Space for paw icon */
+}
+
+#hero {
+    padding: 40px 20px;
+    background-color: #F5E5D5; /* Matches body background for seamless top */
+}
+
+#hero h2 {
+    color: #87CEEB; /* Blue eyes, matching theme */
+    font-size: 56px; /* Doubled size */
+    margin: 0 0 30px 0; /* Space below the inscription */
+    font-style: italic; /* Playful touch */
+}
+
+.hero-cat {
+    width: 300px; /* Size for prominence */
+    border-radius: 50%; /* Rounded for cuteness */
+    border: 5px solid #87CEEB; /* Blue eye highlight */
+    margin-bottom: 20px; /* Space below image */
+}
+
+h2, h3, h4 {
+    color: #87CEEB; /* Blue eyes for all headings */
+}
+
+h3 {
+    font-size: 24px; /* Slightly smaller than h2 */
+    margin: 20px 0 10px 0;
+}
+
+h4 {
+    font-size: 20px; /* For sub-subheadings */
+    margin: 15px 0 5px 0;
+}
+
+ul {
+    list-style-type: none; /* No bullets for clean look */
+    padding: 0;
+    margin: 10px auto;
+    max-width: 600px; /* Center and constrain width */
+    text-align: left; /* Left-align list for readability */
+}
+
+li {
+    margin-bottom: 10px; /* Space between items */
+    padding-left: 20px; /* Indent */
+    position: relative;
+}
+
+li::before {
+    content: "\f1b0"; /* Paw icon from Font Awesome */
+    font-family: "Font Awesome 5 Free";
+    color: #87CEEB; /* Blue paw */
+    position: absolute;
+    left: 0;
+    font-weight: 900; /* Solid icon */
+}
+
+section:not(#hero) {
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 800px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow */
+}
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 10px;
+}
+
+.gallery-grid img {
+    width: 100%;
+    border-radius: 10px;
+}
